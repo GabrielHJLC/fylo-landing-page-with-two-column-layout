@@ -188,7 +188,7 @@ body {
   transition: 0.2s ease-in-out;
 }
 
-input[type='checkbox']{
+.not-active{
   transform: translateY(4px);
   width: 40px;
   height: 20px;
@@ -201,7 +201,21 @@ input[type='checkbox']{
   position: relative;
 }
 
-input[type='checkbox']::before{
+.active{
+  transform: translateY(4px);
+  width: 40px;
+  height: 20px;
+  appearance: none;
+  background-color: var(--Light-Grayish-Blue);
+  border-radius: 50px;
+  box-shadow: inset 0px 0px 16px 1px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  transition: .4s;
+  position: relative;
+
+}
+
+.not-active::before{
   content: '';
   width: 20px;
   height: 20px;
@@ -212,7 +226,14 @@ input[type='checkbox']::before{
   left: 0;
 }
 
-input:checked[type='checkbox']::before{
+.active::before{
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: var(--Light-Gray);
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
   left: 20px;
 }
 
