@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+    <header class="header container" data-aos="zoom-in-down">
+      <a href="#main" class="skip-link"> Skip to content </a>
+      <a href="#" class="header__logo-link">
+        <img src="images/logo.svg" alt="Fylo" class="header__logo" />
+      </a>
+      <nav class="navbar" aria-label="Main">
+        <ul class="navbar__list horizontal-list">
+          <li class="navbar__item">
+            <input type="checkbox" id="switch"> 
+            <label class="modetext">Light mode</label>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Features</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Team</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Sign In</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <article class="introduction container" data-aos="zoom-in-up">
+        <img src="images/illustration-1.svg" alt aria-hidden="true" class="introduction__image" data-aos="zoom-in-up" data-aos-delay="350"/>
+        <div class="introduction__content">
+          <h1 class="introduction__title">
+            All your files in one secure location, accessible anywhere.
+          </h1>
+          <p class="introduction__description">
+            Fylo stores your most important files in one secure location. Access
+            them wherever you need, share and collaborate with friends, family,
+            and co-workers.
+          </p>
+          <form action="#" class="introduction__form form-control">
+            <label for="start-email" class="sr-only">Email:</label>
+            <input id="start-email" type="email" placeholder="Enter your email..." class="introduction__input" required/>
+            <p class="introduction__error-message" aria-live="polite">
+              Whoops, make sure it's an email
+            </p>
+            <button type="submit" class="introduction__button btn btn--primary">
+              Get Started
+            </button>
+          </form>
+        </div>
+      </article>
+
+      <article class="feature">
+        <div class="container">
+          <img src="images/illustration-2.svg" alt aria-hidden="true" class="feature__image" data-aos="zoom-in-right"/>
+          <div class="feature__content" data-aos="zoom-in">
+            <h2 class="feature__title">Stay productive, wherever you are</h2>
+            <p class="feature__description">
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
+            </p>
+            <p class="feature__description">
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required!
+            </p>
+            <a href="#" class="feature__link btn btn--secondary"
+              >See how Fylo works</a
+            >
+
+            <figure class="testimonial" data-aos="zoom-in-right">
+              <figcaption class="testimonial__author">
+                <img
+                  src="images/avatar-testimonial.jpg"
+                  alt="Kyle Burton"
+                  class="testimonial__image"
+                />
+                <div class="testimonial__information">
+                  <p class="testimonial__name">Kyle Burton</p>
+                  <p class="testimonial__job">Founder & CEO, Huddle</p>
+                </div>
+              </figcaption>
+              <blockquote class="testimonial__content">
+                Fylo has improved our team productivity by an order of
+                magnitude. Since making the switch our team has become a
+                well-oiled collaboration machine.
+              </blockquote>
+            </figure>
+          </div>
+        </div>
+      </article>
+      <article class="contact">
+        <div class="container">
+          <div class="contact__content" data-aos="zoom-in-right">
+            <h2 class="contact__title">Get early access today</h2>
+            <p class="contact__description">
+              It only takes a minute to sign up and our free starter tier is
+              extremely generous. If you have any questions, our support team
+              would be happy to help you.
+            </p>
+          </div>
+          <form
+            action="#"
+            class="contact__form form-control"
+            data-aos="zoom-in-left"
+          >
+            <label for="contact-email" class="sr-only">Email:</label>
+            <input
+              id="contact-email"
+              type="email"
+              placeholder="Enter your email..."
+              class="contact__input"
+              required
+            />
+            <p class="introduction__error-message" aria-live="polite">
+              Whoops, make sure it's an email
+            </p>
+            <button type="submit" class="contact__button btn btn--primary">
+              Get Started For Free
+            </button>
+          </form>
+        </div>
+      </article>
+    </main>
+    <!-- ========== End main section ========== -->
+    <!-- ========== Start footer ========== -->
+    <footer class="footer">
+      <div class="container" data-aos="zoom-in">
+        <a href="#" class="footer__logo-link">
+          <img src="images/logo.svg" alt="Fylo" class="footer__logo" />
+        </a>
+        <div class="wrapper">
+          <address class="footer__address">
+            <a href="tel:+1-543-123-4567" class="footer__phone">
+              <img
+                src="images/icon-phone.svg"
+                alt
+                aria-hidden="true"
+                class="footer__icon"
+              />
+              Phone: +1-543-123-4567
+            </a>
+            <a href="mailto:example@fylo.com" class="footer__email">
+              <img
+                src="images/icon-email.svg"
+                alt
+                aria-hidden="true"
+                class="footer__icon"
+              />
+              example@fylo.com
+            </a>
+          </address>
+          <!-- ========== Start footer navigation ========== -->
+          <nav class="navbar navbar--footer" aria-label="Footer">
+            <ul class="navbar__list">
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">About Us</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">Jobs</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">Press</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">Blog</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">Contact Us</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">Terms</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">Privacy</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- ========== End footer navigation ========== -->
+          <!-- ========== Start social links ========== -->
+          <div class="social">
+            <ul class="social__list horizontal-list">
+              <li>
+                <a
+                  href="#"
+                  class="social__link"
+                  aria-label="Facebook"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="social__link"
+                  aria-label="Twitter"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="social__link"
+                  aria-label="Instagram"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- ========== End social links ========== -->
+        <p class="attribution">
+          Challenge by
+          <a
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            rel="noopener"
+            >Frontend Mentor</a
+          >. Coded by
+          <a>Gabriel Henrique</a>.
+        </p>
+      </div>
+    </footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="index.js"></script>
+  <script>
+    AOS.init();
+  </script></body>
+</html>
