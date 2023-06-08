@@ -76,7 +76,7 @@ ul {
   *::-webkit-scrollbar-thumb {
     background-color: var(--Light-Gray);
     border-radius: 10px;
-    border: 3px solid #ffffff;
+    border: 3px solid var(--bg);
   }
 
 button,
