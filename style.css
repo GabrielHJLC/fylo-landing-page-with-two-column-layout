@@ -61,7 +61,7 @@ ul {
   /* Firefox */
   * {
     scrollbar-width: auto;
-    scrollbar-color: var(--Very-Dark-Blue) #fff;
+    scrollbar-color: var(--Very-Dark-Blue) var(--bg);
   }
 
   /* Chrome, Edge, and Safari */
