@@ -70,11 +70,11 @@ ul {
   }
 
   *::-webkit-scrollbar-track {
-    background: #ffffff;
+    background: var(--bg);
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: var(--Very-Dark-Blue);
+    background-color: var(--Light-Gray);
     border-radius: 10px;
     border: 3px solid #ffffff;
   }
